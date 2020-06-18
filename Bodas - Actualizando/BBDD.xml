@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE baseDatos[
+ <!ELEMENT baseDatos (datos)> 
+ <!ELEMENT datos (clientes, invitados, convites, mediosDeTransportes, lunasDeMiel)>
+ <!ELEMENT clientes (cliente*)>
+ <!ELEMENT cliente (sNif, sNombre, sApellidos, sFormaPago, sFecha)>
+ <!ELEMENT invitados (invitado*)>
+ <!ELEMENT invitado (sNif, sNombre, sApellidos, sDireccion, iNumPersonas)>
+ <!ELEMENT convites (convite*)>
+ <!ELEMENT convite (sNifCliente, sNifInvitado, sLugar, sHora, sDescripcion)>
+ <!ELEMENT mediosDeTransporte (medioDeTransporte*)>
+ <!ELEMENT medioDeTransporte (sNif, sCodigoTransporte, sModoTransporte, iNumPersonas, iCosteViaje)>
+ <!ELEMENT lunasDeMiel (lunaDeMiel*)>
+ <!ELEMENT lunaDeMiel (sNif, sCodigoViaje, sPais, iCoste)>
+ <!ELEMENT sNif (#PCDATA)>
+ <!ELEMENT sNombre (#PCDATA)>
+ <!ELEMENT sApellidos (#PCDATA)>
+ <!ELEMENT sFormaPago (#PCDATA)>
+ <!ELEMENT sFecha (#PCDATA)>
+ <!ELEMENT sDireccion (#PCDATA)>
+ <!ELEMENT iNumPersonas (#PCDATA)>
+ <!ELEMENT sNifCliente (#PCDATA)>
+ <!ELEMENT sNifInvitado (#PCDATA)>
+ <!ELEMENT sLugar (#PCDATA)>
+ <!ELEMENT sHora (#PCDATA)>
+ <!ELEMENT sDescripcion (#PCDATA)>
+ <!ELEMENT sCodigoTransporte (#PCDATA)>
+ <!ELEMENT sModoTransporte (#PCDATA)>
+ <!ELEMENT iCosteViaje (#PCDATA)>
+ <!ELEMENT sCodigoViaje (#PCDATA)>
+ <!ELEMENT sPais (#PCDATA)>
+ <!ELEMENT iCoste (#PCDATA)>
+]>
+<baseDatos>
+  <datos>
+    <clientes>
+      <cliente>
+        <sNif>12312312F</sNif>
+        <sNombre>Alberto</sNombre>
+        <sApellidos>Gómez Gómez</sApellidos>
+        <sFormaPago>Tarjeta</sFormaPago>
+        <sFecha>2020-03-12</sFecha>
+      </cliente>
+      <cliente>
+        <sNif>47586921G</sNif>
+        <sNombre>María</sNombre>
+        <sApellidos>Jiménez Jiménez</sApellidos>
+        <sFormaPago>Tarjeta</sFormaPago>
+        <sFecha>2020-07-12</sFecha>
+      </cliente>
+      <cliente>
+        <sNif>28591456Y</sNif>
+        <sNombre>Jesús</sNombre>
+        <sApellidos>Castañas Castañas</sApellidos>
+        <sFormaPago>A mano</sFormaPago>
+        <sFecha>2021-09-15</sFecha>
+      </cliente>
+    </clientes>
+    <invitados>
+      <invitado>
+        <sNif>12342312F</sNif>
+        <sNombre>Mario</sNombre>
+        <sApellidos>Alonso Marr</sApellidos>
+        <sDireccion>Duwsasd 70</sDireccion>
+        <iNumPersonas>1</iNumPersonas>
+      </invitado>
+      <invitado>
+        <sNif>47586924G</sNif>
+        <sNombre>Juan Carlos</sNombre>
+        <sApellidos>Riririri</sApellidos>
+        <sDireccion>DDdidii º0</sDireccion>
+        <iNumPersonas>4</iNumPersonas>
+      </invitado>
+      <invitado>
+        <sNif>47586941G</sNif>
+        <sNombre>Isabel</sNombre>
+        <sApellidos>Compass</sApellidos>
+        <sDireccion>Bibilsa</sDireccion>
+        <iNumPersonas>1</iNumPersonas>
+      </invitado>
+	  <invitado>
+        <sNif>47583921G</sNif>
+        <sNombre>Maria</sNombre>
+        <sApellidos>Renerene</sApellidos>
+        <sDireccion>Buho 1</sDireccion>
+        <iNumPersonas>15</iNumPersonas>
+      </invitado>
+    </invitados>
+    <convites>
+      <convite>
+        <sNifCliente>12312312F</sNifCliente>
+        <sNifInvitado>47586924G</sNifInvitado>
+        <sLugar>Los Palacios</sLugar>
+        <sHora>17:00</sHora>
+        <sDescripcion>Muy bonito</sDescripcion>
+      </convite>
+      <convite>
+        <sNifCliente>47586921G</sNifCliente>
+        <sNifInvitado>47586924G</sNifInvitado>
+        <sLugar>Los marruecos</sLugar>
+        <sHora>13:00</sHora>
+        <sDescripcion>Muy espacioso</sDescripcion>
+      </convite>
+      <convite>
+        <sNifCliente>28591456Y</sNifCliente>
+        <sNifInvitado>47583921G</sNifInvitado>
+        <sLugar>Los pillines</sLugar>
+        <sHora>12:00</sHora>
+        <sDescripcion>Muy único</sDescripcion>
+      </convite>
+    </convites>
+    <mediosDeTransporte>
+      <medioDeTransporte>
+        <sNif>47586924G</sNif>
+        <sCodigoTransporte>22R</sCodigoTransporte>
+        <sModoTransporte>Autobus Sanlucar</sModoTransporte>
+        <iNumPersonas>20</iNumPersonas>
+        <iCosteViaje>100</iCosteViaje>
+      </medioDeTransporte>
+    </mediosDeTransporte>
+	<lunasDeMiel>
+      <lunaDeMiel>
+        <sNif>12312312F</sNif>
+        <sCodigoViaje>21B</sCodigoViaje>
+        <sPais>Japon</sPais>
+        <iCoste>1400</iCoste>
+      </lunaDeMiel>
+    </lunasDeMiel>
+  </datos>
+</baseDatos>
